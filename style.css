@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&family=Encode+Sans:wght@300&family=Poppins:ital,wght@0,100;0,200;1,100;1,200&display=swap');
+
+* {
+    /* font-family: 'Be Vietnam Pro', sans-serif;
+font-family: 'Encode Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    width: 100%;
+    background-color: #121213;
+}
+
+.wrapper {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    width: 100%;
+    background-color: #121213;
+    color: #ffff;
+    /* display: grid;
+    place-items: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    width: 85%;
+    height: 95%;
+    /* border:1px solid #ffff; */
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+
+}
+
+.header .menu-box,
+.song-box {
+    width: 25%;
+    height: 90%;
+    /* border: 1px solid #ffff; */
+    background: #111727;
+    box-shadow: 5px 0px 2px #090f1f;
+    color: #ffff;
+}
+
+.header .song-box {
+    width: 75%;
+    background-color: #0b1320;
+}
+
+.header .master-play {
+    width: 100%;
+    height: 10%;
+    /* border: 1px solid #ffff; */
+    background: #111727;
+    box-shadow: 5px 0px 2px #090f1f;
+}
+
+.header .menu-box h1 {
+    font-size: 20px;
+    margin: 15px 0px 0px 20px;
+    font-weight: 500;
+}
+
+.header .menu-box .playllist {
+
+    margin: 40px 0px 0px 20px;
+
+}
+
+.header .menu-box .playlist h4 {
+    margin: 40px 0px 0px 20px;
+    font-size: 14px;
+    font-weight: 100;
+    padding-bottom: 10px;
+    color: #4c5262;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.header .menu-box .playlist h4:hover {
+    color: #ffff;
+
+}
+
+.header .menu-box .playlist h4 span {
+    position: relative;
+    margin-right: 35px;
+
+}
+
+
+.header .menu-box .playlist h4 span::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border: 2px solid #4c5252;
+    border-radius: 50%;
+    top: -4px;
+    transition: 0.3s;
+}
+
+.header .menu-box .playlist h4:hover span::before {
+    /* color: #ffff; */
+    border: 2px solid #ffff;
+
+}
+
+.header .menu-box .playlist h4 .bi {
+    display: none;
+}
+
+.header .menu-box .playlist .active {
+    color: #36e2ec;
+}
+
+.header .menu-box .playlist .active span {
+    display: none;
+}
+
+.header .menu-box .playlist .active .bi {
+    display: flex;
+    margin-right: 20px;
+
+}
+
+.header .menu-box .menu-song {
+    width: 100%;
+    /* height: 12em; */
+    /* height: 420px; */
+    height: 10em;
+    /* border: 1px solid #ffff; */
+    margin-top: 40px;
+    overflow: auto;
+
+}
+.header .menu-box .menu-song::-webkit-scrollbar {
+    display: none    ;
+
+}
+
+.header .menu-box .menu-song li {
+    list-style-type: none;
+    position: relative;
+    padding: 5px 0px 5px 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.3s linear;
+
+}
+
+.header .menu-box .menu-song li:hover {
+    background: rgb(105, 105, 105, 0.1);
+
+}
+
+.header .menu-box .menu-song li span {
+
+    font-size: 12px;
+    font-weight: 600;
+    color: #4c5262;
+}
+
+.header .menu-box .menu-song li img {
+    width: 32px;
+    height: 32px;
+    margin-left: 25px;
+
+}
+
+.header .menu-box .menu-song li h5 {
+
+    font-size: 11px;
+    margin-left: 15px;
+    width: 170px;
+    /* border: 1px solid #ffff; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.header .menu-box .menu-song li .subtitle {
+    font-size: 9px;
+    color: #4c5262;
+
+}
+
+.header .menu-box .menu-song li .bi {
+    position: absolute;
+    right: 15px;
+    font-size: 20px;
+
+}
+
+.header .master-play{
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+
+}
+
